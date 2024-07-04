@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contro Cash</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="btn-menu">
+        <label for="btn-menu">☰</label>
+      </div>
+      <div class="logo">
+        <a *ngIf="!isHomePage" routerLink="/"><span class="material-symbols-rounded icon">home</span></a>
+      </div>
+      <h1>CONTROL CASH</h1>
+    </div>
+  </header>
+  <div class="capa"></div>
+  <!--	--------------->
+  <input type="checkbox" id="btn-menu">
+  <div class="container-menu">
+    <div class="cont-menu">
+      <nav>
+        <a routerLink="/Login">Iniciar Sesión</a>
+        <a routerLink="/Registrarse">Registrarse</a>
+        <a routerLink="/About">Sobre Nosotros</a>
+      </nav>
+      <label for="btn-menu">✖️</label>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+<router-outlet></router-outlet>
